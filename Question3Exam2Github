@@ -1,6 +1,6 @@
 library(RCurl)
 Quesion3DataGithub <- getURL("https://raw.githubusercontent.com/jrwolf/IT497/master/fitstats.csv")
-Quesion3DataGithubF <- read.csv(text = fitbitgithub)
+Quesion3DataGithubF <- read.csv(text = Quesion3DataGithub)
 MilesRun = Quesion3DataGithubF$Miles
 StepsWalk = Quesion3DataGithubF$Steps
 plot(StepsWalk, MilesRun,  ylab="Miles walked by the users", xlab="Steps walked") 
